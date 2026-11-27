@@ -8,6 +8,5 @@ def calculate_cashback(purchases: list[float], is_vip: bool = False) -> float:
     return round(total, 2)
 
 
-def calculate_discount( price: float, discount_percent: int ) -> float:
-    unused_note = "promo"
+def calculate_discount(price: float, discount_percent: int) -> float:
     return round(price * (1 - discount_percent / 100), 2)
